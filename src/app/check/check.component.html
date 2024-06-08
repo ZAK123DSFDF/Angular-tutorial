@@ -1,0 +1,14 @@
+<p>{{ title() }}</p>
+<p>{{ check() }}</p>
+<p>{{ count() }}</p>
+<button (click)="changeCount()">changeCount</button>
+<button (click)="onSetCount()">onSetCount</button>
+<button (click)="route()">routeHome</button>
+<button routerLink="">routeHomeLink</button>
+<div>
+  <ng-content select="header"></ng-content>
+  <h1>this is the middle</h1>
+  <ng-content select="footer"></ng-content>
+</div>
+<h1>{{ global.globalSignal() }}</h1>
+<button (click)="global.incrementGlobal()">incrementGlobal</button>
